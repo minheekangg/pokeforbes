@@ -48,3 +48,12 @@
     margin: 0 auto;
 
 }
+#pokebox{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+    background-color: lightgray;
+    height: 60vh;
+    border: 1vh solid var(--main-green);
+}
