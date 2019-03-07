@@ -7,6 +7,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="src/index.js" charset="utf-8"></script>
+    <script src="src/adapter.js" charset="utf-8"></script>
+    <script src="src/domcontroller.js" charset="utf-8"></script>
+    <script src="src/pokemon.js" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -25,14 +30,30 @@
         <div id="border"></div>
     </div>
 
-    <div id="pokebox">test</div>
+    <div id="pokebox">
+        <div id="poke-filter">
+            <h2>Filter list by:</h2>
+            <div>Heaviest</div>
+            <div>Tallest</div>
+            <div>Type</div>
+        </div>
+        <div id="pokebox-table">
+            <form id="pokemon-search-form" class="" action="" method="">
+            </form>
+            <table >
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Weight</td>
+                    <td>Height</td>
+                    <td>Type</td>
+                </tr>
+                </table>
+        </div>
+    </div>
     
 
-    <script src="src/index.js" charset="utf-8"></script>
-    <script src="src/DOMController.js" charset="utf-8"></script>
-    <script src="src/picture.js" charset="utf-8"></script>
-    <script src="src/pictureContainer.js" charset="utf-8"></script>
-    <script src="picData.js" charset="utf-8"></script>
+
 
 </body>
 
