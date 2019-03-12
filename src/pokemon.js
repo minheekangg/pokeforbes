@@ -17,11 +17,11 @@ class Pokemon{
 
     render(){
         return `<tr>
-                <th>${this.id}</th>
-                <th>${this.name}</th>
-                <th>${this.weight}</th>
-                <th>${this.height}</th>
-                <th>${this.type}</th>
+                <td>${this.id}</td>
+                <td>${this.name}</td>
+                <td>${this.weight}</td>
+                <td>${this.height}</td>
+                <td>${this.type}</td>
                 </tr>`
     }
 
