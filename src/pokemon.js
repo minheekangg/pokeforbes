@@ -30,10 +30,10 @@ class Pokemon{
             return eachPoke.render()
         }).join('')
     }
-    static renderFilterPokemonByType(){
-        let sortedByWeight = Pokemon.all.sort((a, b) => { a.weight - b.weight })
-        // console.log(sortedByWeight)
-        return sortedByWeight.map(eachPoke => {
+    static renderFilterPokemonById(){
+        let sortedById = Pokemon.all.sort((a, b) => { b.id - a.id })
+        console.log(sortedById)
+        return sortedById.map(eachPoke => {
             return eachPoke.render()
         }).join('')
     }

@@ -3,6 +3,7 @@ class DOMController {
     this.tableDiv = document.querySelector("table");
     this.filterButton = document.querySelector("#poke-filter");
     this.filterButton.addEventListener("click", this.handleFilterButtonClick);
+    
   }
 
   appendAllPokemons(htmlString) {
@@ -33,14 +34,17 @@ class DOMController {
                   <th>Height</th>
                   <th>Type</th>${Pokemon.renderFilterPokemonByHeight()}</tr>`;
         break;
-        case "Type":
+        // case "Type":
+        //     document.querySelector('#type-button').style.display = "block";
+        // break;
+        case "Id":
               document.querySelector(
-                "table"
+                  "table"
               ).innerHTML = `<tr><th>Id</th>
                   <th>Name</th>
                   <th>Weight</th>
                   <th>Height</th>
-                  <th>Type</th>${Pokemon.renderFilterPokemonByType()}</tr>`;
+                  <th>Type</th>${Pokemon.renderFilterPokemonById()}</tr>`;
         break;
     }
   }
