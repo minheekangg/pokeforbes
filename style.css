@@ -80,19 +80,20 @@ body{
 }
 #poke-filter{
     width: 25%;
-    padding-top: 10%;
+    margin-top: 10%;
     padding-left: 2%;
     /* overflow: hidden; */
-    /* height: 60vh; */
+    height: 20vh;
     /* position: fixed; */
+    font-family: "Work Sans";
+     background-color: white; 
+     border-radius: 25px;
+}
+#poke-filter :hover{
+    cursor: pointer;
 }
 #pokebox-table{
-    /* height: 20vh; */
-    width: 80%;
-    height: 100%;
-    overflow: scroll;
-    font-family: "Work Sans";
-    
+    font-family: "Work Sans"
 }
 #pokemon-search-input{
     margin-left: 50%;
@@ -106,14 +107,43 @@ h2{
 }
 
 table{
+    /* display: inline; */
     overflow: auto;
     height: 50vh;
     width: 100%;
     background-color: lightgray;
     text-align: center;
+    /* margin: 4vh; */
+    margin-top:7vh;
     
 }
 
 table td{
+    border-radius: 25px;
     background-color: white;
+}
+
+
+#pokebox-search{
+    width: 80%;
+    height: 100%;
+    overflow: scroll;
+}
+
+form{
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 30%; */
+    /* margin-top: 5vh; */
+    background-color: lightgray;
+    display: fixed;
+    width: 59.8%;
+    height: 4vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    display: fixed;
+    position: absolute;
+}
+form input{
+    /* height: 5vh; */
 }

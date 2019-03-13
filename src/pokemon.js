@@ -15,6 +15,29 @@ class Pokemon{
         }).join('')
     }
 
+    static renderFilterPokemonByWeight(){
+        console.log(Pokemon.all)
+        let sortedByWeight = Pokemon.all.sort((a, b) => { return b.weight - a.weight})
+        console.log(sortedByWeight)
+        return sortedByWeight.map(eachPoke => {
+            return eachPoke.render()
+        }).join('')
+    }
+    static renderFilterPokemonByHeight(){
+        let sortedByHeight = Pokemon.all.sort((a, b) => { return b.height - a.height })
+        // console.log(sortedByHeight);
+        return sortedByHeight.map(eachPoke => {
+            return eachPoke.render()
+        }).join('')
+    }
+    static renderFilterPokemonByType(){
+        let sortedByWeight = Pokemon.all.sort((a, b) => { a.weight - b.weight })
+        // console.log(sortedByWeight)
+        return sortedByWeight.map(eachPoke => {
+            return eachPoke.render()
+        }).join('')
+    }
+
     render(){
         return `<tr>
                 <td>${this.id}</td>

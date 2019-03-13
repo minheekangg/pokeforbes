@@ -16,4 +16,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
         })
 
+    // domController.appendAllPokemons(Pokemon.renderFilterPokemonByHeight());
+    // domController.appendAllPokemons(Pokemon.renderFilterPokemonByWeight());
+    // domController.appendAllPokemons(Pokemon.renderFilterPokemonByType());
+
+
+
+    
+
 })
